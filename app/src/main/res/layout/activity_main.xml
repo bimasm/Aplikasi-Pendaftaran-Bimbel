@@ -26,14 +26,14 @@
             android:layout_centerHorizontal="true"
             android:background="#ff0000"
             android:phoneNumber="false"
-            android:text="SMK Telkom Malang" />
+            android:text="BIMBEL 2016" />
 
         <TextView
             android:id="@+id/textView"
             style="@style/Base.TextAppearance.AppCompat.Headline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Form Pendaftaran Siswa Baru" />
+            android:text="Form Pendaftaran BIMBEL" />
 
         <TextView
             android:id="@+id/textViewNama"
@@ -106,30 +106,29 @@
         </RadioGroup>
 
         <TextView
-            android:id="@+id/textViewJ"
+            android:id="@+id/textViewBimbel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jurusan" />
+            android:text="Bimbel yang diikuti" />
 
-        <RadioGroup
-            android:id="@+id/RadioGroupJurusan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkBoxBING"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B.INGGRIS" />
 
-            <RadioButton
-                android:id="@+id/radioButtonRpl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:text="RPL" />
+        <CheckBox
+            android:id="@+id/checkBoxBI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="B.INDONESIA" />
 
-            <RadioButton
-                android:id="@+id/radioButtonTkj"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:text="TKJ" />
-        </RadioGroup>
+        <CheckBox
+            android:id="@+id/checkBoxMTK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MTK" />
 
         <TextView
             android:id="@+id/textViewAgama"
@@ -172,43 +171,6 @@
                 android:layout_height="wrap_content"
                 android:text="Khatolik" />
         </RadioGroup>
-
-        <TextView
-            android:id="@+id/textViewHobi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hobi" />
-
-        <CheckBox
-            android:id="@+id/checkBoxMB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Membaca" />
-
-        <CheckBox
-            android:id="@+id/checkBoxMN"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Menulis" />
-
-        <CheckBox
-            android:id="@+id/checkBoxMG"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Menggambar" />
-
-        <CheckBox
-            android:id="@+id/checkBoxNF"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Nonton Film" />
-
-        <CheckBox
-            android:id="@+id/checkBoxOL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Olahraga" />
 
         <TextView
             android:id="@+id/textViewKota"
