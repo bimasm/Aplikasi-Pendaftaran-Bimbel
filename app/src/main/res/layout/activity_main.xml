@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl3009.aplikasipendaftaranbimbel.MainActivity">
+
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ff0000"
+            android:phoneNumber="false"
+            android:text="SMK Telkom Malang" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Pendaftaran Siswa Baru" />
+
+        <TextView
+            android:id="@+id/textViewNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Siswa" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textViewAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Lengkap" />
+
+        <EditText
+            android:id="@+id/editTextAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewTahun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tahun Kelahiran" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextTahun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textViewJK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroupJk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonLK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Laki-Laki" />
+
+            <RadioButton
+                android:id="@+id/radioButtonP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Perempuan" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jurusan" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroupJurusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonRpl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="RPL" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTkj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="TKJ" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewAgama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agama" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroupAG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buddha" />
+
+            <RadioButton
+                android:id="@+id/radioButtonH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hindu" />
+
+            <RadioButton
+                android:id="@+id/radioButtonI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Islam" />
+
+            <RadioButton
+                android:id="@+id/radioButtonKR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kristen" />
+
+            <RadioButton
+                android:id="@+id/radioButtonKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khatolik" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewHobi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobi" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Membaca" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menulis" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menggambar" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Nonton Film" />
+
+        <CheckBox
+            android:id="@+id/checkBoxOL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olahraga" />
+
+        <TextView
+            android:id="@+id/textViewKota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kota Asal" />
+
+        <Spinner
+            android:id="@+id/spinnerProvinsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/provinsi" />
+
+        <Spinner
+            android:id="@+id/spinnerKota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK" />
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Hasil" />
+
+    </LinearLayout>
+</ScrollView>
